@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <title>Where In the World</title>
+</head>
+
+<body id="body">
+
+    <nav id="top-navbar" class="navbar navbar-light bg-light">
+        <div id="navbar-items">
+            <a id="brand" class="navbar-brand" href="./index.html">Where in the World?</a>
+            <button type="button" id="mode-btn" class="theme-btn"><i class="far fa-moon"></i> Dark Mode</button>
+        </div>
+    </nav>
+
+    <div id="main-container" class="container">
+
+        <div class="d-flex flex-wrap">
+            <div id="search-container">
+                <form id="search-form">
+                    <input id="search-input" class="fontAwesome" name="search-input" type="text"
+                        placeholder="&#xf002; Search for a country...">
+                </form>
+            </div>
+
+            <div id="filter" class="dropdown top-filter">
+                <button class="btn dropdown-toggle" type="button" id="btn-dropdownMenu" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Filter by Region
+                </button>
+                <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="btn-dropdownMenu">
+                    <a class="dropdown-item" href="#">Africa</a>
+                    <a class="dropdown-item" href="#">Americas</a>
+                    <a class="dropdown-item" href="#">Asia</a>
+                    <a class="dropdown-item" href="#">Europe</a>
+                    <a class="dropdown-item" href="#">Oceania</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="grid-container">
+            <!-- <div id="thumb-1" class="country-thumbnail">
+                <div id="img-1" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-1-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-1-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-1-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-1-capital" class="country-specs"></span></p>
+                </div>
+            </div>
+
+            <div id="thumb-2" class="country-thumbnail">
+                <div id="img-2" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-2-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-2-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-2-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-2-capital" class="country-specs"></span></p>
+                </div>
+            </div>
+
+            <div id="thumb-3" class="country-thumbnail">
+                <div id="img-3" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-3-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-3-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-3-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-3-capital" class="country-specs"></span></p>
+
+                </div>
+            </div>
+
+            <div id="thumb-4" class="country-thumbnail">
+                <div id="img-4" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-4-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-4-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-4-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-4-capital" class="country-specs"></span></p>
+
+                </div>
+            </div>
+
+            <div id="thumb-5" class="country-thumbnail">
+                <div id="img-5" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-5-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-5-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-5-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-5-capital" class="country-specs"></span></p>
+
+                </div>
+            </div>
+
+            <div id="thumb-6" class="country-thumbnail">
+                <div id="img-6" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-6-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-6-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-6-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-6-capital" class="country-specs"></span></p>
+
+                </div>
+            </div>
+
+            <div id="thumb-7" class="country-thumbnail">
+                <div id="img-7" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-7-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-7-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-7-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-7-capital" class="country-specs"></span></p>
+                </div>
+            </div>
+
+            <div id="thumb-8" class="country-thumbnail">
+                <div id="img-8" class="country-img">
+                    <img src="">
+                </div>
+                <div class="country-details">
+                    <h5 id="country-8-name" class="country-name">Portugal</h5>
+                    <p class="detail-title">Population: <span id="country-8-population" class="country-specs"></span>
+                    </p>
+                    <p class="detail-title">Region: <span id="country-8-region" class="country-specs"> </span></p>
+                    <p class="detail-title">Capital: <span id="country-8-capital" class="country-specs"></span></p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    <!-- Javascript Files -->
+    <script src="https://kit.fontawesome.com/2ebefcd618.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

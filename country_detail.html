@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Country Detail</title>
+</head>
+
+<body id="body" onload="getDetail()">
+
+    <nav id="top-navbar" class="navbar navbar-light bg-light">
+        <div id="navbar-items">
+            <a id="brand" class="navbar-brand" href="#">Where In the World?</a>
+            <button type="button" id="mode-btn" class="theme-btn"><i class="far fa-moon"></i> Dark Mode</button>
+        </div>
+    </nav>
+
+
+    <div id="main-container" class="container">
+
+        <div id="btn-detail-container">
+            <a href="index.html" id="btn-return"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
+
+        <div id="details-container">
+
+            <div id="country-detail-img">
+                <img src="">
+            </div>
+
+            <div id="details-sub-container">
+                <h3 id="country-detail-name"></h3>
+
+                <div id="details-info-container">
+                    <div id="main-details-left">
+
+                        <p class="detail-title">Native name: <span id="country-native-name"
+                                class="country-specs"></span></p>
+                        <p class="detail-title">Population: <span id="country-detail-population"
+                                class="country-specs"></span></p>
+                        <p class="detail-title">Region: <span id="country-detail-region" class="country-specs"></span>
+                        </p>
+                        <p class="detail-title">Sub Region: <span id="country-detail-sub-region"
+                                class="country-specs"></span></p>
+                        <p class="detail-title">Capital: <span id="country-detail-capital" class="country-specs"></span>
+                        </p>
+                    </div>
+
+                    <div id="main-details-right">
+                        <p class="detail-title">Top Level Domain: <span id="country-detail-domain"
+                                class="country-specs"></span></p>
+                        <p class="detail-title">Currencies: <span id="country-detail-currency"
+                                class="country-specs"></span></p>
+                        <p class="detail-title">Languages: <span id="country-detail-languages"
+                                class="country-specs"></span></p>
+                    </div>
+                </div>
+
+                <div id="country-details-border">
+                    <p class="detail-title">
+                        Border Countries:
+                        <span id="country-detail-border-list" class="country-specs country-borders"></span>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Javascript Files -->
+    <script src="https://kit.fontawesome.com/2ebefcd618.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

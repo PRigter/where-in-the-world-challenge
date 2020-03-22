@@ -1,0 +1,593 @@
+
+@font-face {
+    font-family: "NunitoSans";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "NunitoSans-SemiBold";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-SemiBold.ttf");
+}
+
+
+@font-face {
+    font-family: "NunitoSans-ExtraBold";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "NunitoSans-Black";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "NunitoSans-Light";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "NunitoSans-ExtraLight";
+    src: url("../assets/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
+}
+
+
+.fontAwesome {
+    font-family: 'NunitoSans', FontAwesome, sans-serif;
+}
+
+body {
+    font-family: "NunitoSans";
+    background-color: hsl(0, 0%, 98%);
+    height: 1024px;
+}
+
+#navbar-items {
+    width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0px;
+    padding-bottom: 45px;
+}
+
+.bg-light, .theme-btn {
+    background-color: hsl(0, 0%, 100%)!important;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    height: 32px;
+    font-size: 24px;
+    font-family: "NunitoSans-ExtraBold";
+}
+
+.theme-btn {
+    border: none;
+    font-family: "NunitoSans-SemiBold";
+    font-size: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.d-flex {
+    max-width: 1280px;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+#search-input {
+    width: 480px;
+    max-width: 480px;
+    height: 56px;
+    background-color: hsl(0, 0%, 100%);
+    border: 0px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding-left: 35px;
+    text-align: justify;
+    color: #848484;
+    border-radius: 3%;
+}
+
+#filter {
+    width: 200px;
+    max-width: 200px;
+    height: 56px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4%;
+}
+
+#btn-dropdownMenu {
+    font-family: "NunitoSans";
+    font-size: 14px;
+    padding: 19px 78px 18px 24px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 48px;
+    vertical-align: .155em;
+    font-size: 20px;
+}
+
+.dropdown-toggle {
+    max-width: 200px;
+}
+
+.dropdown-item {
+    width: 200px;
+    max-width: 200px;
+    font-family: "NunitoSans";
+    font-size: 14px;
+    padding: 0 24px;
+    margin-bottom: 9px;
+}
+
+.dropdown-menu {
+    max-width: 200px;
+    margin-top: 4px;
+    padding: 17px 0 8px 0;
+    border: 0px;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* -- GRID CONTAINER -- */
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 75px;
+    margin-top: 48px;    
+}
+
+#grid-container > :nth-child() {
+    max-width: 264px;
+}
+
+.country-thumbnail {
+    height: 336px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3%;
+    cursor: pointer;  
+}
+
+.thumb-img {
+    width: 264px;
+    max-width: 264px;
+    height: 160px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    object-fit: cover;
+}
+
+.country-details {
+    margin-top: 25px;
+    padding-left: 24px;
+}
+
+.country-name {
+    margin-bottom: 19px;
+    font-family: "NunitoSans-ExtraBold";
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 5px;
+    line-height: 16px;
+}
+
+.detail-title {
+    font-family:"NunitoSans-SemiBold";
+    font-size: 14px;
+}
+
+.country-specs {
+    font-family: "NunitoSans-Light";
+    font-size: 14px;
+}
+
+
+
+/* COUNTRY DETAILS PAGE STYLES */
+
+#btn-detail-container {
+    margin: 80px 0;
+}
+
+#btn-return {
+    display: inline-block;
+    width: 136px;
+    max-width: 136px;
+    height: 40px;
+    font-family: "NunitoSans-Light";
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid hsla(0, 3.8%, 58%, 0.2);
+    box-shadow: 2px 2px 2px rgba(92, 91, 91, 0.6);
+    border-radius: 3px;
+    line-height: 40px;
+}
+
+.fa-arrow-left {
+    padding-right: 6px;
+}
+
+#details-container {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#details-sub-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 597px;
+    height: 323px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+#details-info-container {
+    display: grid;
+    grid-template-columns: 206px 220px;
+    column-gap: 90px;
+}
+
+div#details-info-container p span {
+    line-height: 32px;
+    font-size: 16px;
+}
+
+#main-details-right {
+    max-width: 249px;
+}
+
+#country-detail-img {
+    width: 560px;
+    max-width: 560px;
+}
+
+.image-detail {
+    max-width: 560px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    height: 401px;
+    object-fit: cover;    
+}
+
+#country-detail-name {
+    font-family: "NunitoSans-ExtraBold";
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+#country-details-border {
+    max-width: 451px;
+    margin-top: 42px;
+
+}
+
+#country-detail-border-list {
+    max-width: 96px;
+    height: 28px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+.country-borders {
+    border: 1px solid hsl(0, 0%, 90%, 0.2);
+    padding: 0 6px;
+    margin-left: 5px;
+}
+
+
+
+/* -- LIGHT MODE > EASY IN TRANSITION -- */
+
+/* * {
+    transition: all .09s ease-in;
+} */
+
+.navbar, #search-input, #filter, .container, .country-thumbnail, #body {
+    transition: all 0.2s ease-in; 
+    color: black;
+}
+
+/* -- END OF LIGHT MODE --  */
+
+
+
+/* -- DARK MODE -- */
+.dark-on {
+    transition: all 0.4s ease-in-out;
+    color: hsl(0, 0%, 100%) !important;
+    background-color: hsl(207, 26%, 17%) !important;
+}
+
+.dark-soft-on {
+    transition: all 0.4s ease-in-out;
+    color: hsl(0, 0%, 100%) !important;
+    background-color: hsl(209, 23%, 22%) !important;
+}
+
+.dark-on-border {
+    border: 0px !important;
+    box-shadow: none !important; 
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-family: "NunitoSans-ExtraBold";
+}
+/* -- END OF DARK MODE --  */
+
+
+
+/* --- MEDIA QUERIES --- */
+
+@media(max-width: 1300px) {
+    
+    #search-input {  
+        max-width: 450px;
+    }
+    
+    #grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 55px;
+        margin-top: 48px;
+    }
+
+    div#grid-container .country-thumbnail {
+        max-width: 264px;
+    }
+
+    #navbar-items {
+        max-width: 920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 920px;
+        padding: 0px;
+        padding-bottom: 45px;
+    }
+
+    #details-container {
+        max-width: 920px;
+    }
+
+    #details-sub-container {
+        max-width: 450px;
+    }
+
+    #country-detail-img {
+        width: 450px;
+        max-width: 450px;
+    }
+
+    .image-detail {
+        max-width: 450px;
+    }
+
+    #details-info-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media(max-width: 960px) {
+    #search-input {
+        max-width: 260px;
+    }
+
+    #grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;      
+    }
+
+    div#grid-container .country-thumbnail {
+        max-width: 264px;
+    }
+
+    #navbar-items {
+        max-width: 570px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 570px;
+        padding: 0px;
+        padding-bottom: 45px;
+    }
+
+
+
+    /* -- DETAILS PAGE -- */
+
+    #details-container {
+        max-width: 1280px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #country-detail-img {
+        max-width: 570px;
+
+    }
+
+    .image-detail {
+        max-width: 570px;
+    }
+
+    #details-info-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media(max-width: 610px) {    
+    #top-navbar {
+        height: 80px;
+        padding: 0;
+    }
+
+    #navbar-items {
+        max-width: 460px;
+        height: 80px;
+    }
+
+    .navbar-brand {
+        height: 20px;
+        max-width: 134px;
+        margin-top: 30px;
+        margin-left: 16px;
+        font-size: 14px;
+    }
+
+    .theme-btn {
+        height: 25px;
+        padding: 0px;
+        margin-top: 28px;
+        margin-right: 17px;
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 375px;
+    }
+
+    #btn-dropdownMenu {
+        font-size: 12px;
+    }
+
+    .d-flex {
+        margin-top: 23.5px;
+    }
+    
+    #search-form {
+        padding: 0px;
+        margin-top: 23,5px;
+    }
+
+    #search-input {
+        font-size: 12px;
+        max-width: 343px;
+        padding-left: 32px;
+    }
+
+    #filter {
+        margin-top: 40px;
+        width: 200px;
+        height: 48px;
+    }
+
+    #grid-container {
+        margin-top: 32px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 40px;    
+    }
+
+    div#grid-container .country-thumbnail {
+        max-width: 264px;
+    }
+
+    .container {
+        max-width: 375px;
+        padding: 0px;
+        padding-bottom: 45px;
+    }
+
+
+
+    /* -- DETAILS PAGE -- */
+
+     #details-container {
+        width: 320px;
+        max-width: 320px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 27px 0 28px;
+    }
+
+    #btn-detail-container {
+        margin-top: 40px;
+        margin-left: 24px;
+    }
+
+
+    #country-detail-img {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    .image-detail {
+        max-width: 320px;
+        height: 229px;
+    }
+    
+    #details-container {
+        max-width: 347px;
+    }
+
+    #details-info-container {
+        grid-template-columns: 1fr;
+    }
+
+    div#details-info-container p span {
+        font-size: 14px;
+    }
+
+    #details-sub-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        margin-top: 44px;
+        margin-left: 0px;
+    }
+
+    #details-info-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 90px;
+    }
+
+    #main-details-right {
+        margin-top: 45px;
+    }
+
+    #country-details-border {
+        margin-top: 41px;
+    }
+
+    #country-detail-border-list {
+        max-width: 96px;
+        display: block;
+        margin-top: 17px;
+    }   
+
+}
